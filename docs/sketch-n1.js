@@ -3,9 +3,9 @@ var co
 
 function setup() {
   createCanvas(400, 400);
-    frameRate(1); 
+    frameRate(10); 
 co=0;
-  j=random(-50,50); 
+     j=random(-50,50); 
   q=random(50,220);
   k=random(50,170);
   n=random(-50,50); 
@@ -13,14 +13,16 @@ co=0;
   v=random(0,int(0.2*j));
   x2=random(20,200);
   y2=random(10,200);
+
+ 
 }
 
 function draw() {
  background(250);
 noFill();
 strokeWeight(1);
- //stroke(200,100,100+co);
- co=co+10;
+//stroke(130,100+co,100+0.2*co);
+ co=co+15;
 
   //x2=150;
   //y2=150;
@@ -52,9 +54,13 @@ if (y4>= width){
   y3=y3-20;}
   if (x1<= 2){
   x1=x1+20;}
+  if (x4<= x2){
+  y4=y4+0.5*int(y4-y2);}
+   if (x1>= x4){
+  x1=x1-0.5*int(y4-y1);}
   
   //console.log(mouseX,mouseY);
 }
 function mousePressed(){
-  saveFrames('ngroup', 'png', 1, 1);
+  //saveFrames('ngroup', 'png', 1, 1);
   setup();}
