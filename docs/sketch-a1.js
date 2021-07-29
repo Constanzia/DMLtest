@@ -17,10 +17,12 @@ co=0;
   n=random(0,50); 
   p=random(0,50);
   v=random(0,int(0.2*j));
-  m=random(0,j);
+  m=random(0,k);
   l=random(0,20);
   r21=random(y2,(y2+q));
   r34=random((y2+l),(y2+q+v));
+  x21=random(x2,x2+j);
+  x34=random(x2+m,x2+j+k);
  
  
 }
@@ -38,11 +40,11 @@ strokeWeight(1);
   y1=y2+q;
   x3=x2+m;
   y3=y2+l;
-  x4=x1+0.5*k;
+  x4=x1+k;
   y4=y1+v;
-  x5=x2-n
+  x5=x21
   y5=r21
-  x6=x3+p
+  x6=x34
   y6=r34
 
 line(x1,y1,x2,y2);
