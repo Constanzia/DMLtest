@@ -2,47 +2,22 @@
 <html>
 
 <head>
-
-    <script>
-        (function(d) {
-            var config = {
-                    kitId: 'efm0qyy',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h = d.documentElement,
-                t = setTimeout(function() {
-                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-                }, config.scriptTimeout),
-                tk = d.createElement("script"),
-                f = false,
-                s = d.getElementsByTagName("script")[0],
-                a;
-            h.className += " wf-loading";
-            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-            tk.async = true;
-            tk.onload = tk.onreadystatechange = function() {
-                a = this.readyState;
-                if (f || a && a != "complete" && a != "loaded") return;
-                f = true;
-                clearTimeout(t);
-                try {
-                    Typekit.load(config)
-                } catch (e) {}
-            };
-            s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/zam3zkw.css">
     <title>Type Lab</title>
+<link rel="stylesheet" href="https://use.typekit.net/fso3jll.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-<a href="nlabvol1.html">N-vol.1</a>
-<a href="Alabvol1.html">A-vol.1</a>
+    <h1>Type Lab by Constance Chen</h1>
+    <a href="nlabvol1.html">
+        <lk>N-vol.1</lk>
+    </a>
+    <br>
+    <a href="Alabvol1.html">
+        <lk>A-vol.1</lk>
+    </a>
 </body>
+
 </html>
