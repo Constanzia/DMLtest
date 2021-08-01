@@ -7,7 +7,6 @@ html, body {
       font-style: normal;
       font-weight: 400;
       scroll-behavior: smooth;
-      cursor:crosshair;
        margin-top:2vh;
        margin-left:10vw;
   }
