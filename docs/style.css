@@ -4,11 +4,11 @@
       font-weight: 400;
       scroll-behavior: smooth;
       cursor:crosshair;
-       margin:5vw;
+       margin:2vw;
   }
 canvas {
   display: block;
-      left:25vw;
+      left:35vw;
 }
  a,
   a:link,
