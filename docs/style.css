@@ -4,11 +4,12 @@
       font-weight: 400;
       scroll-behavior: smooth;
       cursor:crosshair;
-       margin:2vw;
+       margin-top:2vh;
+       margin-left:10vw;
   }
 canvas {
   display: block;
-      left:35vw;
+      left:40vw;
 }
  a,
   a:link,
