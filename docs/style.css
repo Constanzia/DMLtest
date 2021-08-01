@@ -11,6 +11,9 @@ canvas {
   display: block;
       left:40vw;
 }
+h1{  font-weight: 700;
+      font-size:8vh;
+}
  a,
   a:link,
   a:visited {
@@ -66,6 +69,12 @@ canvas {
   /* Border radius gives rounded corners, if they're big enough, you end up with circles */
   border-radius: 8px;
   
+}
+.navigator{
+font-size:5vh;
+position:fixed;
+      top:65%;
+      left:10%;
 }
 
 
