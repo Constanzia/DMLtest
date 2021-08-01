@@ -4,9 +4,11 @@
       font-weight: 400;
       scroll-behavior: smooth;
       cursor:crosshair;
+       margin:5vw;
   }
 canvas {
   display: block;
+      left:25vw;
 }
  a,
   a:link,
