@@ -2,6 +2,7 @@ html, body {
   margin: 1vw;
     font-family:bilo, sans-serif;
   padding-left: 20vw;
+  background:rgb(180,180,180);
 
 }
 h1{  font-weight: 700;
@@ -30,7 +31,7 @@ top:2vh;}
     padding-right:2%;
   font-size:22px;
   cursor: pointer;
-  background:#ffffff;
+  background:inherit;
   border:solid #000000 2px;
     border-radius: 40px;
   
