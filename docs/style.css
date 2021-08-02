@@ -2,7 +2,7 @@ html, body {
   margin: 1vw;
     font-family:bilo, sans-serif;
   padding-left: 20vw;
-   padding-top: 22vh;
+   margin-top: 25vh;
 }
 h1{  font-weight: 700;
       font-size:8vh;
