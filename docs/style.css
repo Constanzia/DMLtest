@@ -2,7 +2,7 @@ html, body {
   margin: 1vw;
     font-family:bilo, sans-serif;
   padding-left: 20vw;
-   margin-top: 25vh;
+
 }
 h1{  font-weight: 700;
       font-size:8vh;
@@ -20,6 +20,7 @@ canvas {
   left:20%;
 }
 .main{  position:absolute;
+  width:55vw;
   left:25vw;
 top:2vh;}
 .myButtons{ -webkit-appearance: none;
