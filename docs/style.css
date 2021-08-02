@@ -17,6 +17,35 @@ canvas {
   display: block;
   left:20%
 }
+.myButtons{ -webkit-appearance: none;
+   margin:35px;
+    padding:1.5%;
+  padding-left:2%;
+    padding-right:2%;
+  font-size:25px;
+  cursor: pointer;
+  background:#ffffff;
+  border:solid #000000 2px;
+    border-radius: 40px;
+  
+ }
+.mySliders{
+  padding-top:100px;
+  width: 220px;
+  background-color: transparent;
+
+  /* Removes some defaults */
+  -webkit-appearance: none;
+ 
+}
+
+
+/* These styles affect what happens when the cursor is focused on the slider (i.e. clicking it) */
+.mySliders:focus {
+  
+  /* Stops the default outline showing up */
+  outline: none;
+}
 
 /* This is the "track" that the slider sits on  */
 .mySliders::-webkit-slider-runnable-track {
@@ -45,6 +74,8 @@ canvas {
   border-radius: 12px;
   
 }
+
+
 
 
 
