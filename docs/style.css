@@ -1,7 +1,7 @@
 html, body {
   margin: 1vw;
     font-family:bilo, sans-serif;
-  padding: 10px;
+  padding-left: 20vw;
 }
 h1{  font-weight: 700;
       font-size:8vh;
@@ -18,7 +18,7 @@ canvas {
   display: block;
   left:20%;
 }
-.main{  position:absolute;
+.main{
   left:25vw;
 top:2vh;}
 .myButtons{ -webkit-appearance: none;
