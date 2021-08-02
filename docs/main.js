@@ -3,7 +3,7 @@ var xer = document.getElementById("xer);
 const fillx = e => {
   xer.style.width = e.offsetX + "px";
   xer.style.backgroundColor = "transparent";
-  xer.style.border-left=" 1px solid white";
+  xer.style.border-right=" 1px solid white";
 
   console.log(filler.style.width);
 };
