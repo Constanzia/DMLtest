@@ -7,7 +7,7 @@
       cursor:crosshair;
       color: #ffffff;
   }
-.xer{position:absolute;
+#xer{position:absolute;
   left:0px;
  top:0px;
  background:transparent;
@@ -17,7 +17,7 @@
   height: 100vw;
    transition: width 0.1s;
   }
-.yer{position:absolute;
+#yer{position:absolute;
  left:0px;
  top:0px;
  background:transparent;
