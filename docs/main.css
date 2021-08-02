@@ -12,9 +12,10 @@
  top:0px;
  background:transparent;
   z-index:999;
- width: 0vw;
+ width: 0px;
   border-right: solid 1px white;
   height: 100vw;
+   transition: width 0.1s;
   }
 .yer{position:absolute;
  left:0px;
@@ -23,7 +24,8 @@
   z-index:999;
  width: 100vw;
   border-bottom: solid 1px white;
-  height: 0vh;
+  height: 0px;
+    transition: height 0.1s;
   }
   
   a,
