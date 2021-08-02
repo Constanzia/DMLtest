@@ -25,6 +25,7 @@ canvas {
   left:25vw;
 top:2vh;}
 .myButtons{ -webkit-appearance: none;
+     font-family:bilo, sans-serif;
    margin-left:30px;
     padding:1.5%;
   padding-left:2%;
