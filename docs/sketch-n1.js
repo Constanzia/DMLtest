@@ -1,5 +1,6 @@
 let x1,x2,x3,x4,y1,y2,y3,y4,j,q,k,n,p,v
 var co
+let bgcolor=180;
 
 function setup() {
   createCanvas(400, 400);
@@ -18,7 +19,7 @@ co=0;
 }
 
 function draw() {
- background(250);
+ background(bgcolor);
 noFill();
 strokeWeight(1);
 //stroke(130,100+co,100+0.2*co);
