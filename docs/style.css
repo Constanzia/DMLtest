@@ -19,8 +19,8 @@ canvas {
   display: block;
   left:20%;
 }
-.main{  position:absolute;
-  width:55vw;
+.main{ 
+  width:420px;
   left:25vw;
 top:2vh;}
 .myButtons{ -webkit-appearance: none;
