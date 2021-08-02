@@ -1,7 +1,8 @@
 html, body {
   margin: 1vw;
     font-family:bilo, sans-serif;
-  padding-left: 15vw;
+  padding-left: 20vw;
+   padding-top: 22vh;
 }
 h1{  font-weight: 700;
       font-size:8vh;
