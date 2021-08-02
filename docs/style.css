@@ -15,8 +15,10 @@ h1{  font-weight: 700;
   }
 canvas {
   display: block;
-  left:20%
+  left:20%;
 }
+.main{left:25vw;
+top:2vh;}
 .myButtons{ -webkit-appearance: none;
    margin:35px;
     padding:1.5%;
