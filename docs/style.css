@@ -1,7 +1,7 @@
 html, body {
   margin: 1vw;
     font-family:bilo, sans-serif;
-  padding-left: 20vw;
+  padding-left: 10vw;
   background:rgb(180,180,180);
 
 }
@@ -18,11 +18,10 @@ h1{  font-weight: 700;
 canvas {
 
   display: block;
-  left:20%;
 }
 .main{ 
   width:650px;
-  left:25vw;
+  left:15vw;
 top:2vh;}
 .myButtons{ -webkit-appearance: none;
      font-family:bilo, sans-serif;
