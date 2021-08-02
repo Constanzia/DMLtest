@@ -13,7 +13,7 @@
  background:transparent;
   z-index:999;
  width: 0vw;
-  border: solid 1px black;
+  border-right: solid 1px white;
   height: 100vw;
   }
 .yer{position:absolute;
@@ -22,7 +22,7 @@
  background:transparent;
   z-index:999;
  width: 100vw;
-  border: solid 1px black;
+  border-bottom: solid 1px white;
   height: 0vh;
   }
   
