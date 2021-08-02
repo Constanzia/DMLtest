@@ -7,6 +7,24 @@
       cursor:crosshair;
       color: #ffffff;
   }
+.xer{position:absolute;
+  left:0px;
+ top:0px;
+ background:transparent;
+  z-index:999;
+ width: 0vw;
+  border: solid 1px black;
+  height: 100vw;
+  }
+.yer{position:absolute;
+ left:0px;
+ top:0px;
+ background:transparent;
+  z-index:999;
+ width: 100vw;
+  border: solid 1px black;
+  height: 0vh;
+  }
   
   a,
   a:link,
