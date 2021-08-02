@@ -8,6 +8,7 @@ let button,button2;
 let buttontext
 let g=false
 var i=1
+let bgcolor=180
 
 var cir1= {x:65,y:65}
     cir2= {x:cir1.x+90,y:cir1.y}
@@ -53,7 +54,7 @@ buttontext='grid view'
 
 function draw() {
 //console.log(size1.value())
-  background(255);
+  background(bgcolor);
 r=size1.value();
   //x=[65,155,245,335]
  // y=[65,155,245,335]
@@ -92,7 +93,7 @@ function base(x,y,scale){
 }
 function empty(x,y,scale){
  noStroke();
-  fill(255);
+  fill(bgcolor);
 //strokeWeight(1);
 
   circle(x,y,scale);
@@ -295,7 +296,7 @@ function grid1(){
   k=2
   for (a=65;a<=width;a+=90) {
      for (b=65;b<=height;b+=90){
-fill(255,30,60)
+fill(bgcolor-100)
        noStroke()
 circle(a-r,b,k)
 circle(a+r,b,k)
