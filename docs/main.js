@@ -1,4 +1,4 @@
-var xer = document.getElementById("xer);
+var xer = document.getElementById("xer");
 
 const fillx = e => {
   xer.style.width = e.offsetX + "px";
@@ -17,4 +17,5 @@ const filly = e => {
   console.log(filler.style.width);
 };
 
-document.addEventListener("mousemove", fillx,filly);
+document.addEventListener("mousemove", fillx);
+document.addEventListener("mousemove", filly);
