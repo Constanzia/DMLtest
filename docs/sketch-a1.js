@@ -1,8 +1,8 @@
 let x1,x2,x3,x4,x5,x6,y1,y2,y3,y4,y5,y6
 let j,q,k,n,p,v,m,l
 let r21,r34
-var co
-
+var colet 
+let bgcolor=180;
 function setup() {
   createCanvas(400, 400);
     frameRate(10); 
@@ -28,7 +28,7 @@ co=0;
 }
 
 function draw() {
- background(250);
+ background(bgcolor);
 noFill();
 strokeWeight(1);
 //stroke(130,100+co,100+0.2*co);
