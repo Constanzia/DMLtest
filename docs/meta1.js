@@ -82,11 +82,6 @@ function draw() {
   //r2=r+size2.value();
   r3 = (sqrt(2) * d - r) *size2.value()/100;
 
-//console.log(r3)
-  //x=[65,155,245,335]
-  // y=[65,155,245,335]
-  //for(var x=65; x<width;x+=90){
-  //for(var y=65;y<width;y+=90){
   fill(0);
   noStroke(0);
 
@@ -100,8 +95,9 @@ function draw() {
       newbase2();
     refill2();
   } else if (i == 3) {
+    draw3
     newbase3();
-    strokeWeight(3);
+  
     draw3();
     refill3();
   } else if (i == 4) {
@@ -140,7 +136,7 @@ function showGrid() {
   buttontext = "show grid";
 }
 function changeImage() {
-  if (i < 2) {
+  if (i <3) {
     i++;
   } else {
     i = 1;
@@ -543,4 +539,151 @@ function refill2() {
    base(cir9.x, cir9.y);
      base(cir11.x, cir11.y);
        base(cir14.x, cir14.y);
+}
+function newbase3() {
+  empty(cir1.x, cir1.y, 2 * r);
+  empty(cir2.x, cir2.y, 2 * r);
+  base(cir3.x, cir3.y, 2 * r);
+  base(cir4.x, cir4.y, 2 * r);
+  empty(cir5.x, cir5.y, 2 * r);
+  base(cir6.x, cir6.y, 2 * r);
+  empty(cir7.x, cir7.y, 2 * r);
+  base(cir8.x, cir8.y, 2 * r);
+  empty(cir9.x, cir9.y, 2 * r);
+  base(cir10.x, cir10.y, 2 * r);
+  empty(cir11.x, cir11.y, 2 * r);
+  empty(cir12.x, cir12.y, 2 * r);
+  base(cir13.x, cir13.y, 2 * r);
+  empty(cir14.x, cir14.y, 2 * r);
+  base(cir15.x, cir15.y, 2 * r);
+  empty(cir16.x, cir16.y, 2 * r);
+}
+
+function draw3() {
+  fill(0);
+  noStroke();
+  //直
+  if (ac) {
+    quad(
+      cir4.x - r * cos(PI / 4),
+      cir4.y + r * cos(PI / 4),
+      cir4.x + r * cos(PI / 4),
+      cir4.y - r * cos(PI / 4),
+      cir8.x + r * cos(PI / 4),
+      cir8.y - r * cos(PI / 4),
+      cir8.x - r * cos(PI / 4),
+      cir8.y - r * cos(PI / 4)
+    );
+    quad(
+      cir6.x - r * cos(PI / 4),
+      cir6.y + r * cos(PI / 4),
+      cir6.x + r * cos(PI / 4),
+      cir6.y - r * cos(PI / 4),
+      cir10.x + r * cos(PI / 4),
+      cir10.y - r * cos(PI / 4),
+      cir10.x - r * cos(PI / 4),
+      cir10.y - r * cos(PI / 4)
+    );
+    quad(
+      cir3.x + r * cos(PI / 4),
+      cir3.y - r * cos(PI / 4),
+      cir4.x - r * cos(PI / 4),
+      cir4.y - r * cos(PI / 4),
+      cir4.x - r * cos(PI / 4),
+      cir4.y + r * cos(PI / 4),
+      cir3.x + r * cos(PI / 4),
+      cir3.y + r * cos(PI / 4)
+    );
+  } else {
+    quad(
+      cir4.x - r,
+      cir4.y,
+      cir4.x + r,
+      cir4.y,
+      cir8.x + r,
+      cir8.y,
+      cir8.x - r,
+      cir8.y
+    );
+    quad(
+      cir6.x - r,
+      cir6.y,
+      cir6.x + r,
+      cir6.y,
+      cir10.x + r,
+      cir10.y,
+      cir10.x - r,
+      cir10.y
+    );
+    quad(
+      cir3.x,
+      cir3.y - r,
+      cir4.x,
+      cir4.y - r,
+      cir4.x,
+      cir4.y + r,
+      cir3.x,
+      cir3.y + r
+    );
+  }
+
+  //直
+  if (ac) {
+    verticalspace();
+  }
+  //斜
+  fill(0);
+  noStroke();
+ quad(
+    cir3.x - r,
+    cir3.y,
+    cir6.x,
+    cir6.y - r,
+    cir6.x + r,
+    cir6.y,
+    cir3.x,
+    cir3.y + r
+  );
+   quad(
+    cir10.x - r,
+    cir10.y,
+    cir13.x,
+    cir13.y - r,
+    cir13.x + r,
+    cir13.y,
+    cir10.x,
+    cir10.y + r
+  );
+   quad(
+    cir3.x,
+    cir3.y + r,
+    cir3.x + r,
+    cir3.y,
+    cir8.x,
+    cir8.y - r,
+    cir8.x - r,
+    cir8.y
+  );
+   quad(
+    cir10.x,
+    cir10.y + r,
+    cir10.x + r,
+    cir10.y,
+    cir15.x,
+    cir15.y - r,
+    cir15.x - r,
+    cir15.y
+  );
+  //斜
+
+  //endShape(CLOSE);
+}
+
+function refill3() {
+  fill(0);
+  beginShape();
+  vertex(cir4.x,cir4.y);
+   vertex(cir8.x,cir8.y);
+   vertex(cir3.x,cir3.y);
+   endShape(CLOSE);
 }
