@@ -109,7 +109,7 @@ function draw() {
   } else if (i == 4) {
      draw4();
     
-    strokeWeight(3);
+    newbase4();
    
     refill4();
   } else if (i == 5) {
@@ -159,26 +159,7 @@ function grid1() {
       //noStroke();
       noFill()
       circle(a,b,r*2)
-     /* circle(a - r, b, k);
-      circle(a + r, b, k);
-      circle(a, b + r, k);
-      circle(a, b - r, k);
-
-      circle(a + r * cos(PI / 8.0), b + r * sin(PI / 8.0), k);
-      circle(a + r * cos(PI / 8.0), b - r * sin(PI / 8.0), k);
-      circle(a - r * cos(PI / 8.0), b + r * sin(PI / 8.0), k);
-      circle(a - r * cos(PI / 8.0), b - r * sin(PI / 8.0), k);
-
-      circle(a + r * sin(PI / 8.0), b - r * cos(PI / 8.0), k);
-      circle(a - r * sin(PI / 8.0), b - r * cos(PI / 8.0), k);
-      circle(a - r * sin(PI / 8.0), b + r * cos(PI / 8.0), k);
-      circle(a + r * sin(PI / 8.0), b + r * cos(PI / 8.0), k);
-
-      circle(a + r * cos(PI / 4.0), b + r * sin(PI / 4.0), k);
-      circle(a + r * cos(PI / 4.0), b - r * sin(PI / 4.0), k);
-      circle(a - r * cos(PI / 4.0), b - r * sin(PI / 4.0), k);
-      circle(a - r * cos(PI / 4.0), b + r * sin(PI / 4.0), k);
-      */
+    
     }
   }
 }
@@ -805,6 +786,18 @@ function draw4() {
   //斜
   fill(0);
   noStroke();
+  if (ac == false) {
+    quad(
+      cir1.x,
+      cir1.y + r,
+      cir1.x + r,
+      cir1.y,
+      cir6.x,
+      cir6.y - r,
+      cir6.x - r,
+      cir6.y
+    );
+  }
   quad(
     cir4.x - r,
     cir4.y,
@@ -860,8 +853,15 @@ function draw4() {
 function refill4() {
   fill(0);
   beginShape();
-  vertex(cir2.x, cir2.y);
-  vertex(cir7.x, cir7.y);
-  vertex(cir6.x, cir6.y);
+  if (ac == false) {
+    vertex(cir1.x, cir1.y);
+    vertex(cir2.x, cir2.y);
+    vertex(cir7.x, cir7.y);
+    vertex(cir6.x, cir6.y);
+  } else {
+    vertex(cir2.x, cir2.y);
+    vertex(cir7.x, cir7.y);
+    vertex(cir6.x, cir6.y);
+  }
   endShape(CLOSE);
 }
