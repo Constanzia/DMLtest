@@ -62,7 +62,6 @@ function setup() {
   size2 = createSlider(100, 120, 100);
   size2.addClass("mySliders-small");
   button = createButton(buttontext);
-  button.position(0, 0);
   button.mousePressed(showGrid);
   button.addClass("myButtons");
   button2 = createButton("→");
