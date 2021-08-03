@@ -5,9 +5,25 @@
       font-style: normal;
       font-weight: 400;
       scroll-behavior: smooth;
-      cursor:url('cursor.svg'),url('cursor.png'),crosshair;
+      /*cursor:url('cursor.svg'),url('cursor.png'),crosshair;*/
+   cursor:none
       color: #000000;
   }
+.cursor {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: -50%;
+  left: -50%;
+  margin: -15px 0 0 -15px;
+  border-radius: 50%;
+  background-color: black;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease-out;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  pointer-events: none;
+}
 @keyframes changecolor{
 
  0%{background-color: #85D400;}
