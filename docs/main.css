@@ -1,12 +1,25 @@
   * {
-      background-color: rgb(0, 0, 0);
+      background-color: #85D400;
+      animation:changecolor 8s infinite;;
       font-family:bilo, sans-serif;
       font-style: normal;
       font-weight: 400;
       scroll-behavior: smooth;
       cursor:crosshair;
-      color: #ffffff;
+      color: #000000;
   }
+@keyframes changecolor{
+
+ 0%{background-color: #85D400;}
+ 25%{background-color: #FFEC2A;}
+ 50%{background-color: #5700D4;}
+ 75%{background-color: #E9005E;}
+ 99%{background-color:  #85D400;}
+
+
+
+
+}
 #xer{position:absolute;
   left:0px;
  top:0px;
@@ -32,13 +45,13 @@
   a:link,
   a:visited {
       color: inherit;
-      background-color: inherit;
+      background-color:transparent;
       text-decoration: none;
   }
   
   a:hover {
       /*color: chartreuse;*/
-      background-color: inherit;
+      background-color: transparent;
       text-decoration: underline;
   }
   
