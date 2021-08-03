@@ -6,7 +6,7 @@
       font-weight: 400;
       scroll-behavior: smooth;
       /*cursor:url('cursor.svg'),url('cursor.png'),crosshair;*/
-   cursor:none
+   cursor:none;
       color: #000000;
   }
 .cursor {
