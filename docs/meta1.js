@@ -8,7 +8,7 @@ let x, y, r, r2, r3, k;
 let button, button2, button3;
 let buttontext;
 let g = false;ac=true
-var i = 2;
+var i;
 let bgcolor = 180;
 
 var cir1 = { x: 65, y: 65 };
@@ -53,7 +53,7 @@ mid21 = {  x: mid1.x+4*d, y: mid1.y + 8* d  };
 function setup() {
   createCanvas(400, 400);
   frameRate(20);
-  //i = int(random(1, 5.999));
+  i = int(random(1, 4.999));
   //console.log(i);
   buttontext = "grid view";
 
@@ -107,14 +107,15 @@ function draw() {
 
     refill3();
   } else if (i == 4) {
-    newbase4();
+     draw4();
+    
     strokeWeight(3);
-    draw4();
+   
     refill4();
   } else if (i == 5) {
+     draw5();
     newbase5();
-    strokeWeight(3);
-    draw5();
+   
     refill5();
   }
 
@@ -142,7 +143,7 @@ function showGrid() {
   buttontext = "show grid";
 }
 function changeImage() {
-  if (i < 3) {
+  if (i < 4) {
     i++;
   } else {
     i = 1;
@@ -692,4 +693,175 @@ function refill3() {
    vertex(cir8.x,cir8.y);
    vertex(cir3.x,cir3.y);
    endShape(CLOSE);
+}
+function newbase4() {
+  base(cir1.x, cir1.y, 2 * r);
+  base(cir2.x, cir2.y, 2 * r);
+  empty(cir3.x, cir3.y, 2 * r);
+  base(cir4.x, cir4.y, 2 * r);
+  empty(cir5.x, cir5.y, 2 * r);
+  base(cir6.x, cir6.y, 2 * r);
+  base(cir7.x, cir7.y, 2 * r);
+  empty(cir8.x, cir8.y, 2 * r);
+  base(cir9.x, cir9.y, 2 * r);
+  empty(cir10.x, cir10.y, 2 * r);
+  empty(cir11.x, cir11.y, 2 * r);
+  base(cir12.x, cir12.y, 2 * r);
+  base(cir13.x, cir13.y, 2 * r);
+  empty(cir14.x, cir14.y, 2 * r);
+  base(cir15.x, cir15.y, 2 * r);
+  empty(cir16.x, cir16.y, 2 * r);
+}
+
+function draw4() {
+  //直
+  if (ac) {
+    quad(
+      cir2.x - r * cos(PI / 4),
+      cir2.y + r * cos(PI / 4),
+      cir2.x + r * cos(PI / 4),
+      cir2.y - r * cos(PI / 4),
+      cir6.x + r * cos(PI / 4),
+      cir6.y - r * cos(PI / 4),
+      cir6.x - r * cos(PI / 4),
+      cir6.y - r * cos(PI / 4)
+    );
+    quad(
+      cir9.x - r * cos(PI / 4),
+      cir9.y + r * cos(PI / 4),
+      cir9.x + r * cos(PI / 4),
+      cir9.y - r * cos(PI / 4),
+      cir13.x + r * cos(PI / 4),
+      cir13.y - r * cos(PI / 4),
+      cir13.x - r * cos(PI / 4),
+      cir13.y - r * cos(PI / 4)
+    );
+    quad(
+      cir1.x + r * cos(PI / 4),
+      cir1.y - r * cos(PI / 4),
+      cir2.x - r * cos(PI / 4),
+      cir2.y - r * cos(PI / 4),
+      cir2.x - r * cos(PI / 4),
+      cir2.y + r * cos(PI / 4),
+      cir1.x + r * cos(PI / 4),
+      cir1.y + r * cos(PI / 4)
+    );
+    quad(
+      cir6.x + r * cos(PI / 4),
+      cir6.y - r * cos(PI / 4),
+      cir7.x - r * cos(PI / 4),
+      cir7.y - r * cos(PI / 4),
+      cir7.x - r * cos(PI / 4),
+      cir7.y + r * cos(PI / 4),
+      cir6.x + r * cos(PI / 4),
+      cir6.y + r * cos(PI / 4)
+    );
+  } else {
+    quad(
+      cir2.x - r,
+      cir2.y,
+      cir2.x + r,
+      cir2.y,
+      cir6.x + r,
+      cir6.y,
+      cir6.x - r,
+      cir6.y
+    );
+    quad(
+      cir9.x - r,
+      cir9.y,
+      cir9.x + r,
+      cir9.y,
+      cir13.x + r,
+      cir13.y,
+      cir13.x - r,
+      cir13.y
+    );
+    quad(
+      cir1.x,
+      cir1.y - r,
+      cir2.x,
+      cir2.y - r,
+      cir2.x,
+      cir2.y + r,
+      cir1.x,
+      cir1.y + r
+    );
+    quad(
+      cir6.x,
+      cir6.y - r,
+      cir7.x,
+      cir7.y - r,
+      cir7.x,
+      cir7.y + r,
+      cir6.x,
+      cir6.y + r
+    );
+  }
+  //直
+  if (ac) {
+    verticalspace();
+  }
+  //斜
+  fill(0);
+  noStroke();
+  quad(
+    cir4.x - r,
+    cir4.y,
+    cir7.x,
+    cir7.y - r,
+    cir7.x + r,
+    cir7.y,
+    cir4.x,
+    cir4.y + r
+  );
+  quad(
+    cir6.x - r,
+    cir6.y,
+    cir9.x,
+    cir9.y - r,
+    cir9.x + r,
+    cir9.y,
+    cir6.x,
+    cir6.y + r
+  );
+  quad(
+    cir12.x - r,
+    cir12.y,
+    cir15.x,
+    cir15.y - r,
+    cir15.x + r,
+    cir15.y,
+    cir12.x,
+    cir12.y + r
+  );
+  quad(
+    cir2.x,
+    cir2.y + r,
+    cir2.x + r,
+    cir2.y,
+    cir7.x,
+    cir7.y - r,
+    cir7.x - r,
+    cir7.y
+  );
+  quad(
+    cir7.x,
+    cir7.y + r,
+    cir7.x + r,
+    cir7.y,
+    cir12.x,
+    cir12.y - r,
+    cir12.x - r,
+    cir12.y
+  );
+}
+
+function refill4() {
+  fill(0);
+  beginShape();
+  vertex(cir2.x, cir2.y);
+  vertex(cir7.x, cir7.y);
+  vertex(cir6.x, cir6.y);
+  endShape(CLOSE);
 }
