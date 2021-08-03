@@ -7,7 +7,7 @@ let x, y, r, r2, r3, k;
 
 let button, button2, button3;
 let buttontext;
-let g = false;ac=true
+let g = false;ac=true;
 var i = 2;
 let bgcolor = 180;
 
@@ -57,12 +57,12 @@ function setup() {
   //console.log(i);
   buttontext = "grid view";
 
-  size1 = createSlider(28, d, 37);
-  size1.addClass("mySliders");
-  //size2 = createSlider(0, 5, 0);
-  //size2.addClass("mySliders");
+  size1 = createSlider(2800, 100*d, 3700);
+  size1.addClass("mySliders-small");
+  size2 = createSlider(100, 120, 100);
+  size2.addClass("mySliders-small");
   button = createButton(buttontext);
-  //button.position(0, 0);
+  button.position(0, 0);
   button.mousePressed(showGrid);
   button.addClass("myButtons");
   button2 = createButton("→");
@@ -77,9 +77,11 @@ function draw() {
 //console.log(mouseX,mouseY)
   //console.log(size1.value())
   background(bgcolor);
-  r = size1.value();
-  r2 = 2 * d - size1.value();
-  r3 = sqrt(2) * d - r ;
+  r = size1.value()/100;
+
+  r2 = (2 * d - r);
+  //r2=r+size2.value();
+  r3 = (sqrt(2) * d - r) *size2.value()/100;
 
 //console.log(r3)
   //x=[65,155,245,335]
@@ -146,6 +148,91 @@ function changeImage() {
   }
 }
 function showArc(){ac=!ac}
+function grid1() {
+  k = 2;
+  for (a = 65; a <= width; a += 90) {
+    for (b = 65; b <= height; b += 90) {
+      strokeWeight(2)
+      stroke(bgcolor - 100);
+      //noStroke();
+      noFill()
+      circle(a,b,r*2)
+     /* circle(a - r, b, k);
+      circle(a + r, b, k);
+      circle(a, b + r, k);
+      circle(a, b - r, k);
+
+      circle(a + r * cos(PI / 8.0), b + r * sin(PI / 8.0), k);
+      circle(a + r * cos(PI / 8.0), b - r * sin(PI / 8.0), k);
+      circle(a - r * cos(PI / 8.0), b + r * sin(PI / 8.0), k);
+      circle(a - r * cos(PI / 8.0), b - r * sin(PI / 8.0), k);
+
+      circle(a + r * sin(PI / 8.0), b - r * cos(PI / 8.0), k);
+      circle(a - r * sin(PI / 8.0), b - r * cos(PI / 8.0), k);
+      circle(a - r * sin(PI / 8.0), b + r * cos(PI / 8.0), k);
+      circle(a + r * sin(PI / 8.0), b + r * cos(PI / 8.0), k);
+
+      circle(a + r * cos(PI / 4.0), b + r * sin(PI / 4.0), k);
+      circle(a + r * cos(PI / 4.0), b - r * sin(PI / 4.0), k);
+      circle(a - r * cos(PI / 4.0), b - r * sin(PI / 4.0), k);
+      circle(a - r * cos(PI / 4.0), b + r * sin(PI / 4.0), k);
+      */
+    }
+  }
+}
+function grid2() {
+  k = 1.6;
+  for (a = 20; a <= width+45; a += 90) {
+    for (b = -70; b <= height+45; b += 90) {
+      fill(bgcolor - 100);
+      noStroke();
+      circle(a - r3, b, k);
+      circle(a + r3, b, k);
+      circle(a, b + r3, k);
+      circle(a, b - r3, k);
+
+      circle(a + r3 * cos(PI / 8.0), b + r3 * sin(PI / 8.0), k);
+      circle(a + r3 * cos(PI / 8.0), b - r3 * sin(PI / 8.0), k);
+      circle(a - r3 * cos(PI / 8.0), b + r3 * sin(PI / 8.0), k);
+      circle(a - r3 * cos(PI / 8.0), b - r3 * sin(PI / 8.0), k);
+
+      circle(a + r3 * sin(PI / 8.0), b - r3 * cos(PI / 8.0), k);
+      circle(a - r3 * sin(PI / 8.0), b - r3 * cos(PI / 8.0), k);
+      circle(a - r3 * sin(PI / 8.0), b + r3 * cos(PI / 8.0), k);
+      circle(a + r3 * sin(PI / 8.0), b + r3 * cos(PI / 8.0), k);
+
+      circle(a + r3 * cos(PI / 4.0), b + r3 * sin(PI / 4.0), k);
+      circle(a + r3 * cos(PI / 4.0), b - r3 * sin(PI / 4.0), k);
+      circle(a - r3 * cos(PI / 4.0), b - r3 * sin(PI / 4.0), k);
+      circle(a - r3 * cos(PI / 4.0), b + r3 * sin(PI / 4.0), k);
+    }
+  }
+}
+function verticalspace() {
+  noStroke();
+  fill(bgcolor);
+  circle(mid1.x, mid1.y, 2 * r3);
+  circle(mid2.x, mid2.y, 2 * r3);
+  circle(mid3.x, mid3.y, 2 * r3);
+  circle(mid4.x, mid4.y, 2 * r3);
+  circle(mid5.x, mid5.y, 2 * r3);
+  circle(mid6.x, mid6.y, 2 * r3);
+  circle(mid7.x, mid7.y, 2 * r3);
+  circle(mid8.x, mid8.y, 2 * r3);
+  circle(mid9.x, mid9.y, 2 * r3);
+  circle(mid10.x, mid10.y, 2 * r3);
+  circle(mid11.x, mid11.y, 2 * r3);
+  circle(mid12.x, mid12.y, 2 * r3);
+  circle(mid13.x, mid13.y, 2 * r3);
+  circle(mid14.x, mid14.y, 2 * r3);
+  circle(mid15.x, mid15.y, 2 * r3);
+  circle(mid16.x, mid16.y, 2 * r3);
+  circle(mid17.x, mid17.y, 2 * r3);
+  circle(mid18.x, mid18.y, 2 * r3);
+  circle(mid19.x, mid19.y, 2 * r3);
+  circle(mid20.x, mid20.y, 2 * r3);
+  circle(mid21.x, mid21.y, 2 * r3);
+}
 function newbase1() {
   empty(cir1.x, cir1.y, 2);
   base(cir2.x, cir2.y, 2);
@@ -296,7 +383,21 @@ function refill1() {
     // fill(bgcolor);circle(mid12.x, mid12.y, 2 * r3);
     fill(0);
     circle(303, 275, 15);
-  }
+    }
+    
+    base(cir2.x, cir2.y);
+     base(cir5.x, cir5.y); 
+  base(cir7.x, cir7.y);
+  base(cir8.x, cir8.y);
+  
+  base(cir10.x, cir10.y);
+  base(cir11.x, cir11.y);
+  base(cir12.x, cir12.y);
+  base(cir13.x, cir13.y);
+ 
+  base(cir16.x, cir16.y);
+    
+  
   //fill(bgcolor);
   //noStroke();
   //arc(cir6.x, cir6.y, 2 * r2, 2 * r2, PI, 0, OPEN);
@@ -434,93 +535,13 @@ function draw2() {
 function refill2() {
   fill(0);
   beginShape();
-  vertex(326, 160);
-  vertex(340, 334);
-  vertex(244, 247);
+  vertex(335, 160);
+  vertex(335, 340);
+  vertex(259, 260);
   endShape(CLOSE);
-}
-function grid1() {
-  k = 2;
-  for (a = 65; a <= width; a += 90) {
-    for (b = 65; b <= height; b += 90) {
-      strokeWeight(2)
-      stroke(bgcolor - 100);
-      //noStroke();
-      noFill()
-      circle(a,b,r*2)
-     /* circle(a - r, b, k);
-      circle(a + r, b, k);
-      circle(a, b + r, k);
-      circle(a, b - r, k);
-
-      circle(a + r * cos(PI / 8.0), b + r * sin(PI / 8.0), k);
-      circle(a + r * cos(PI / 8.0), b - r * sin(PI / 8.0), k);
-      circle(a - r * cos(PI / 8.0), b + r * sin(PI / 8.0), k);
-      circle(a - r * cos(PI / 8.0), b - r * sin(PI / 8.0), k);
-
-      circle(a + r * sin(PI / 8.0), b - r * cos(PI / 8.0), k);
-      circle(a - r * sin(PI / 8.0), b - r * cos(PI / 8.0), k);
-      circle(a - r * sin(PI / 8.0), b + r * cos(PI / 8.0), k);
-      circle(a + r * sin(PI / 8.0), b + r * cos(PI / 8.0), k);
-
-      circle(a + r * cos(PI / 4.0), b + r * sin(PI / 4.0), k);
-      circle(a + r * cos(PI / 4.0), b - r * sin(PI / 4.0), k);
-      circle(a - r * cos(PI / 4.0), b - r * sin(PI / 4.0), k);
-      circle(a - r * cos(PI / 4.0), b + r * sin(PI / 4.0), k);
-      */
-    }
-  }
-}
-function grid2() {
-  k = 1.6;
-  for (a = 20; a <= width+45; a += 90) {
-    for (b = -70; b <= height+45; b += 90) {
-      fill(bgcolor - 100);
-      noStroke();
-      circle(a - r3, b, k);
-      circle(a + r3, b, k);
-      circle(a, b + r3, k);
-      circle(a, b - r3, k);
-
-      circle(a + r3 * cos(PI / 8.0), b + r3 * sin(PI / 8.0), k);
-      circle(a + r3 * cos(PI / 8.0), b - r3 * sin(PI / 8.0), k);
-      circle(a - r3 * cos(PI / 8.0), b + r3 * sin(PI / 8.0), k);
-      circle(a - r3 * cos(PI / 8.0), b - r3 * sin(PI / 8.0), k);
-
-      circle(a + r3 * sin(PI / 8.0), b - r3 * cos(PI / 8.0), k);
-      circle(a - r3 * sin(PI / 8.0), b - r3 * cos(PI / 8.0), k);
-      circle(a - r3 * sin(PI / 8.0), b + r3 * cos(PI / 8.0), k);
-      circle(a + r3 * sin(PI / 8.0), b + r3 * cos(PI / 8.0), k);
-
-      circle(a + r3 * cos(PI / 4.0), b + r3 * sin(PI / 4.0), k);
-      circle(a + r3 * cos(PI / 4.0), b - r3 * sin(PI / 4.0), k);
-      circle(a - r3 * cos(PI / 4.0), b - r3 * sin(PI / 4.0), k);
-      circle(a - r3 * cos(PI / 4.0), b + r3 * sin(PI / 4.0), k);
-    }
-  }
-}
-function verticalspace() {
-  noStroke();
-  fill(bgcolor);
-  circle(mid1.x, mid1.y, 2 * r3);
-  circle(mid2.x, mid2.y, 2 * r3);
-  circle(mid3.x, mid3.y, 2 * r3);
-  circle(mid4.x, mid4.y, 2 * r3);
-  circle(mid5.x, mid5.y, 2 * r3);
-  circle(mid6.x, mid6.y, 2 * r3);
-  circle(mid7.x, mid7.y, 2 * r3);
-  circle(mid8.x, mid8.y, 2 * r3);
-  circle(mid9.x, mid9.y, 2 * r3);
-  circle(mid10.x, mid10.y, 2 * r3);
-  circle(mid11.x, mid11.y, 2 * r3);
-  circle(mid12.x, mid12.y, 2 * r3);
-  circle(mid13.x, mid13.y, 2 * r3);
-  circle(mid14.x, mid14.y, 2 * r3);
-  circle(mid15.x, mid15.y, 2 * r3);
-  circle(mid16.x, mid16.y, 2 * r3);
-  circle(mid17.x, mid17.y, 2 * r3);
-  circle(mid18.x, mid18.y, 2 * r3);
-  circle(mid19.x, mid19.y, 2 * r3);
-  circle(mid20.x, mid20.y, 2 * r3);
-  circle(mid21.x, mid21.y, 2 * r3);
+   base(cir3.x, cir3.y);
+   base(cir5.x, cir5.y);
+   base(cir9.x, cir9.y);
+     base(cir11.x, cir11.y);
+       base(cir14.x, cir14.y);
 }
