@@ -51,7 +51,7 @@ mid21 = {  x: mid1.x+4*d, y: mid1.y + 8* d  };
 
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 400);
   frameRate(20);
   //i = int(random(1, 5.999));
   //console.log(i);
@@ -150,7 +150,7 @@ function changeImage() {
 function showArc(){ac=!ac}
 function grid1() {
   k = 2;
-  for (a = 65; a <= width; a += 90) {
+  for (a = 65; a <= 400; a += 90) {
     for (b = 65; b <= height; b += 90) {
       strokeWeight(2)
       stroke(bgcolor - 100);
@@ -182,7 +182,7 @@ function grid1() {
 }
 function grid2() {
   k = 1.6;
-  for (a = 20; a <= width+45; a += 90) {
+  for (a = 20; a <= 400+45; a += 90) {
     for (b = -70; b <= height+45; b += 90) {
       fill(bgcolor - 100);
       noStroke();
