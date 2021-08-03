@@ -9,7 +9,9 @@
    /*cursor:none;*/
       color: #000000;
   }
-.thecolumn{float:left;}
+.thecolumn{
+ background:transparent;
+ float:left;}
 .cursor {
   position: absolute;
   width: 32px;
