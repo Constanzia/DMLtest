@@ -3,8 +3,8 @@ html, body {
     font-family:bilo, sans-serif;
   padding-left: 10vw;
   background:rgb(180,180,180);
-  /*cursor:url('cursor.svg'),url('cursor.png'),crosshair;*/
-cursor:none;
+  cursor:url('cursor.svg'),url('cursor.png'),crosshair;*/
+
 }
 h1{  font-weight: 700;
       font-size:13vh;
@@ -23,21 +23,7 @@ canvas {
 
   display: block;
 }
-.cursor {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  top: -50%;
-  left: -50%;
-  margin: -15px 0 0 -15px;
-  border-radius: 50%;
-  background-color: black;
-  backface-visibility: hidden;
-  transition: transform 0.2s ease-out;
-  mix-blend-mode: difference;
-  z-index: 1000;
-  pointer-events: none;
-}
+
 .main{ 
   width:650px;
   left:15vw;
