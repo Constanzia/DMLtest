@@ -33,7 +33,7 @@ var cir1= {x:65,y:65}
 function setup() {
   createCanvas(400, 400);
   frameRate(20)
-i=int(random(1,4.99));
+i=int(random(1,5.999));
   //console.log(i);
 buttontext='grid view'
 
@@ -84,6 +84,10 @@ refill3();}
 strokeWeight(3)
 draw4();
 refill4();}
+      else if (i==5){newbase5();
+strokeWeight(3)
+draw5();
+refill5();}
 
 if(g){grid1();}
    
@@ -112,7 +116,7 @@ g=!g;
 buttontext=('show grid')
 }
 function changeImage() {
-if (i<4){i++;}else
+if (i<5){i++;}else
 {i=1}
 }
 
@@ -552,6 +556,157 @@ function refill4() {
   if (r >vmin-10) {
    empty(cir10.x, cir10.y, 2 * r);}
 }
+function newbase5() {
+   base(cir1.x, cir1.y, 2 * r);
+  empty(cir2.x, cir2.y, 2 * r);
+empty(cir3.x, cir3.y, 2 * r);
+ base(cir4.x, cir4.y, 2 * r);
+  empty(cir5.x, cir5.y, 2 * r);
+ empty(cir6.x, cir6.y, 2 * r);
+  empty(cir7.x, cir7.y, 2 * r);
+ empty(cir8.x, cir8.y, 2 * r);
+  base(cir9.x, cir9.y, 2 * r);
+  empty(cir10.x, cir10.y, 2 * r);
+empty(cir11.x, cir11.y, 2 * r);
+ empty(cir12.x, cir12.y, 2 * r);
+  empty(cir13.x, cir13.y, 2 * r);
+  base(cir14.x, cir14.y, 2 * r);
+empty(cir15.x, cir15.y, 2 * r);
+  base(cir16.x, cir16.y, 2 * r);
+}
+
+function draw5() {
+  beginShape();
+//stroke(0);strokeWeight(1);noFill()
+ fill(0)
+  
+   vertex(cir11.x+r,cir11.y); 
+     vertex(cir7.x+r,cir7.y);
+     vertex(cir7.x,cir7.y-r);
+    vertex(cir6.x,cir6.y-r);
+
+  
+     if (r < vmin) {
+    vertex(cir6.x - r * cos(PI / 8.0), cir6.y - r * sin(PI / 8.0));
+  } else if (r > vmax) {
+    vertex(cir6.x - r, cir6.y);}else {
+    vertex(cir6.x - r * cos(PI / 12.0), cir6.y- r * sin(PI / 12.0));
+  }
+        if (r < vmin) {
+    vertex(cir9.x + r * cos(PI / 8.0), cir9.y + r * sin(PI / 8.0));
+  } else if (r > vmax) {
+    vertex(cir9.x+r, cir9.y);}else {
+    vertex(cir9.x + r * cos(PI / 12.0), cir9.y+ r * sin(PI / 12.0));
+  }
+  
+  
+     if (r < vmin) {
+    vertex(cir9.x - r * cos(PI / 12.0), cir9.y - r * sin(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir9.x - r * cos(PI / 3.0), cir9.y - r * sin(PI / 3.0));}else {
+    vertex(cir9.x - r * cos(PI / 4.0), cir9.y- r * sin(PI / 4.0));
+  }
+
+     if (r < vmin) {
+    vertex(cir5.x + r * cos(PI / 12.0), cir5.y + r * sin(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir5.x + r *cos(PI / 3.0), cir5.y + r * sin(PI / 3.0));}else {
+    vertex(cir5.x + r * cos(PI / 4.0), cir5.y + r *sin(PI / 4.0));
+  }  
+  if (r < vmin) {
+    vertex(cir5.x + r * cos(PI / 12.0), cir5.y - r * sin(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir5.x + r * cos(PI / 3.0), cir5.y - r * sin(PI / 3.0));}else {
+    vertex(cir5.x + r * cos(PI / 4.0), cir5.y - r * sin(PI / 4.0));
+  }
+    if (r < vmin) {
+    vertex(cir1.x - r * cos(PI / 12.0), cir1.y + r * sin(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir1.x - r * cos(PI / 3.0), cir1.y + r * sin(PI / 3.0));}else {
+    vertex(cir1.x - r * cos(PI / 4.0), cir1.y + r * sin(PI / 4.0));
+  }
+ vertex( cir1.x + r * cos(PI / 3.0), cir1.y - r * sin(PI / 3.0));
+   vertex( cir3.x - r * cos(PI / 3.0), cir3.y + r * sin(PI / 3.0));
+  
+ if (r < vmin) {
+    vertex(cir3.x + r * sin(PI / 12.0), cir3.y + r *cos(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir3.x + r * sin(PI / 3.0), cir3.y + r * cos(PI / 3.0));}else {
+    vertex(cir3.x + r * sin(PI / 4.0), cir3.y + r * cos(PI / 4.0));
+  }
+  if (r < vmin) {
+    vertex(cir4.x - r * sin(PI / 12.0), cir4.y - r *cos(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir4.x - r * sin(PI / 3.0), cir4.y - r * cos(PI / 3.0));}else {
+    vertex(cir4.x - r * sin(PI / 4.0), cir4.y - r * cos(PI / 4.0));
+  }
+    if (r < vmin) {
+    vertex(cir4.x + r * cos(PI / 12.0), cir4.y+ r *sin(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir4.x+ r * cos(PI / 3.0), cir4.y +r * sin(PI / 3.0));}else {
+    vertex(cir4.x + r * cos(PI / 4.0), cir4.y + r * sin(PI / 4.0));
+  }
+if (r < vmin) {
+    vertex(cir8.x - r * cos(PI / 12.0), cir8.y - r *sin(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir8.x - r * cos(PI / 3.0), cir8.y - r * sin(PI / 3.0));}else {
+    vertex(cir8.x - r * cos(PI / 4.0), cir8.y - r * sin(PI / 4.0));
+  }
+
+   vertex( cir8.x - r * sin(PI / 3.0), cir8.y + r * cos(PI / 3.0));
+   vertex( cir16.x + r * sin(PI / 3.0), cir16.y - r * cos(PI / 3.0));
+  
+  if (r < vmin) {
+    vertex(cir16.x - r * sin(PI / 12.0), cir16.y + r *cos(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir16.x - r * sin(PI / 3.0), cir16.y + r * cos(PI / 3.0));}else {
+    vertex(cir16.x - r * sin(PI / 4.0), cir16.y + r * cos(PI / 4.0));
+  }
+  if (r < vmin) {
+    vertex(cir15.x + r * sin(PI / 12.0), cir15.y - r *cos(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir15.x + r * sin(PI / 3.0), cir15.y - r * cos(PI / 3.0));}else {
+    vertex(cir15.x + r * sin(PI / 4.0), cir15.y - r * cos(PI / 4.0));
+  }
+    if (r < vmin) {
+    vertex(cir15.x - r * sin(PI / 12.0), cir15.y - r *cos(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir15.x - r * sin(PI / 3.0), cir15.y - r * cos(PI / 3.0));}else {
+    vertex(cir15.x - r * sin(PI / 4.0), cir15.y - r * cos(PI / 4.0));
+  }
+  if (r < vmin) {
+    vertex(cir14.x + r * sin(PI / 12.0), cir14.y + r *cos(PI / 12.0));
+  } else if (r > vmax) {
+    vertex(cir14.x + r * sin(PI / 3.0), cir14.y + r * cos(PI / 3.0));}else {
+    vertex(cir14.x + r * sin(PI / 4.0), cir14.y + r * cos(PI / 4.0));
+  }
+   
+     if (r < vmin) {
+    vertex(cir14.x - r * sin(PI / 8.0), cir14.y - r *cos(PI / 8.0));
+  } else if (r > vmax) {
+    vertex(cir14.x , cir14.y-r);}else {
+    vertex(cir14.x - r * sin(PI / 12.0), cir14.y- r * cos(PI / 12.0));
+  }
+        if (r < vmin) {
+    vertex(cir11.x + r * sin(PI / 8.0), cir11.y + r * cos(PI / 8.0));
+  } else if (r > vmax) {
+    vertex(cir11.x, cir11.y+r);}else {
+    vertex(cir11.x + r * sin(PI / 12.0), cir11.y+ r * cos(PI / 12.0));
+  }
+  
+  endShape(CLOSE);
+}
+
+function refill5() {
+    empty(cir3.x, cir3.y, 2 * r);
+  empty(cir5.x, cir5.y, 2 * r);
+    empty(cir6.x, cir6.y, 2 * r);
+empty(cir7.x, cir7.y, 2 * r);
+  empty(cir15.x, cir15.y, 2 * r);
+   empty(cir8.x, cir8.y, 2 * r);
+     empty(cir11.x, cir11.y, 2 * r);
+}
+
 function grid1() {
   k = 2;
   for (a = 65; a <= width; a += 90) {
