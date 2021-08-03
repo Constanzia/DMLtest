@@ -3,6 +3,7 @@ html, body {
     font-family:bilo, sans-serif;
   padding-left: 10vw;
   background:rgb(180,180,180);
+  cursor:crosshair;
 
 }
 h1{  font-weight: 700;
