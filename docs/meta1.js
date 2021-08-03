@@ -7,7 +7,7 @@ let x, y, r, r2, r3, k;
 
 let button, button2, button3;
 let buttontext;
-let g = false;ac=true;
+let g = false;ac=true
 var i = 2;
 let bgcolor = 180;
 
@@ -51,7 +51,7 @@ mid21 = {  x: mid1.x+4*d, y: mid1.y + 8* d  };
 
 
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(400, 400);
   frameRate(20);
   //i = int(random(1, 5.999));
   //console.log(i);
@@ -62,6 +62,7 @@ function setup() {
   size2 = createSlider(100, 120, 100);
   size2.addClass("mySliders-small");
   button = createButton(buttontext);
+
   button.mousePressed(showGrid);
   button.addClass("myButtons");
   button2 = createButton("→");
@@ -82,6 +83,11 @@ function draw() {
   //r2=r+size2.value();
   r3 = (sqrt(2) * d - r) *size2.value()/100;
 
+//console.log(r3)
+  //x=[65,155,245,335]
+  // y=[65,155,245,335]
+  //for(var x=65; x<width;x+=90){
+  //for(var y=65;y<width;y+=90){
   fill(0);
   noStroke(0);
 
@@ -95,10 +101,10 @@ function draw() {
       newbase2();
     refill2();
   } else if (i == 3) {
-    draw3
+        draw3();
     newbase3();
-  
-    draw3();
+   
+
     refill3();
   } else if (i == 4) {
     newbase4();
@@ -136,7 +142,7 @@ function showGrid() {
   buttontext = "show grid";
 }
 function changeImage() {
-  if (i <3) {
+  if (i < 3) {
     i++;
   } else {
     i = 1;
@@ -145,7 +151,7 @@ function changeImage() {
 function showArc(){ac=!ac}
 function grid1() {
   k = 2;
-  for (a = 65; a <= 400; a += 90) {
+  for (a = 65; a <= width; a += 90) {
     for (b = 65; b <= height; b += 90) {
       strokeWeight(2)
       stroke(bgcolor - 100);
@@ -177,7 +183,7 @@ function grid1() {
 }
 function grid2() {
   k = 1.6;
-  for (a = 20; a <= 400+45; a += 90) {
+  for (a = 20; a <= width+45; a += 90) {
     for (b = -70; b <= height+45; b += 90) {
       fill(bgcolor - 100);
       noStroke();
