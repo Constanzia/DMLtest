@@ -87,9 +87,24 @@ top:0.2vh;}
   border-radius: 12px;
   
 }
+.mySliders-small::-webkit-slider-thumb {
+  width: 12px;
+  height: 12px;
+  background: black;
+  cursor: pointer;
+  -webkit-appearance: none;
+  
+  /* negative top padding moves it up */
+  margin-top: -4px;
+
+  
+  /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+  border-radius: 12px;
+  
+}
 .mySliders-small {
   padding-top: 100px;
-  width: 100px;
+  width: 55px;
   background-color: transparent;
 
 
