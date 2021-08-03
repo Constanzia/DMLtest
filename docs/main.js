@@ -1,21 +1,11 @@
-var xer = document.getElementById("xer");
+var $cursor = $('.cursor');
 
-const fillx = e => {
-  xer.style.width = e.offsetX + "px";
-  xer.style.backgroundColor = "transparent";
-  xer.style.border-right=" 1px solid white";
+function moveCursor(e) {
 
-  console.log(filler.style.width);
-};
-var yer = document.getElementById("yer");
+  $cursor.css({"top": e.pageY, "left": e.pageX});
 
-const filly = e => {
-  yer.style.height = e.offsetY + "px";
-  yer.style.backgroundColor = "transparent";
-  yer.style.border-bottom=" 1px solid white";
+  clearTimeout(timer2);
 
-  console.log(filler.style.width);
-};
+}
 
-document.addEventListener("mousemove", fillx);
-document.addEventListener("mousemove", filly);
+$(window).on('mousemove', moveCursor);
