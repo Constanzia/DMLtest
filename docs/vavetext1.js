@@ -10,10 +10,10 @@ function preload() {
 function setup() {
   createCanvas(600, 400);
   inp = createInput("");
-  inp.position(350, 350);
+
   inp.size(50, 20);
   cur=createSlider(50,1000,700)
-  cur.position(160, 350);
+
   cur.addClass('mySliders');
   //inp.input(myInputEvent);
 }
