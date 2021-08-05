@@ -8,7 +8,7 @@ function preload() {
   myFont = loadFont("Poppins-Medium.ttf");
 }
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(150, 400);
  
   cur=createSlider(50,1000,700)
 
@@ -29,9 +29,9 @@ function draw() {
   textSize(65);
   //text(word,200,200)
 
-  var pt = myFont.textToPoints(word, 10, 220,150,{  sampleFactor: 1.5,
+  var pt = myFont.textToPoints(word, 0, 220,150,{  sampleFactor: 1.5,
     simplifyThreshold: 0});
-  var bounds = myFont.textBounds(word, 10, 220, 100);
+  var bounds = myFont.textBounds(word, 0, 220, 100);
 
  beginShape(POINTS);
   for (var i = 0; i < pt.length; i++) {
