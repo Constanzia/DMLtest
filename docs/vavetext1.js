@@ -8,7 +8,7 @@ function preload() {
   myFont = loadFont("Poppins-Medium.ttf");
 }
 function setup() {
-  createCanvas(150, 400);
+  createCanvas(1500, 400);
  
   cur=createSlider(50,1000,700)
 
