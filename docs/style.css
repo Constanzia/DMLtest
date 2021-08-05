@@ -148,7 +148,7 @@ position:fixed;
 */
 input{
     outline-style: none ;
-    border-bottom: 1px solid #000000; 
+    border-bottom: 2px solid #000000; 
   margin-left:30px;
   margin-right:30px;
   background:transparent;
