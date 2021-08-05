@@ -29,9 +29,9 @@ function draw() {
   textSize(65);
   //text(word,200,200)
 
-  var pt = myFont.textToPoints(word, 0, 220,150,{  sampleFactor: 1.5,
+  var pt = myFont.textToPoints(word, 30, 220,150,{  sampleFactor: 1.5,
     simplifyThreshold: 0});
-  var bounds = myFont.textBounds(word, 0, 220, 100);
+  var bounds = myFont.textBounds(word, 30, 220, 100);
 
  beginShape(POINTS);
   for (var i = 0; i < pt.length; i++) {
