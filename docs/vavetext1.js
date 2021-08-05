@@ -9,12 +9,12 @@ function preload() {
 }
 function setup() {
   createCanvas(600, 400);
-  inp = createInput("");
-
-  inp.size(50, 20);
+ 
   cur=createSlider(50,1000,700)
 
   cur.addClass('mySliders');
+   inp = createInput("?");
+  inp.size(80, 20);
   //inp.input(myInputEvent);
 }
 
