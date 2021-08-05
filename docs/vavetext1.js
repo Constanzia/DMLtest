@@ -28,7 +28,7 @@ function draw() {
   textSize(65);
   //text(word,200,200)
 
-  var pt = myFont.textToPoints(word, 120, 220,150,{  sampleFactor: 1.5,
+  var pt = myFont.textToPoints(word, 80, 220,150,{  sampleFactor: 1.5,
     simplifyThreshold: 0});
   var bounds = myFont.textBounds(word, 80, 220, 100);
 
