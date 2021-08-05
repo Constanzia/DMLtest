@@ -15,6 +15,7 @@ function setup() {
   cur.addClass('mySliders');
    inp = createInput("?");
   inp.size(120, 15);
+   inp.addClass('myInput');
   //inp.input(myInputEvent);
 }
 
