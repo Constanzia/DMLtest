@@ -1,6 +1,7 @@
 var w, h;
 var k, b;
 var v1, v2, v3, v4, v5, v6, v7, v8, v9;
+let bgcolor=180
 function setup() {
   createCanvas(400, 400, SVG);
   w = width / 2;
@@ -16,7 +17,7 @@ function setup() {
 
 function draw() {
   frameRate(k.value());
-  background("transparent");
+  background(bgcolor);
   //noFill();
   fill(0);
   noStroke();
