@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
   frameRate(k.value());
-  background(bgcolor);
+  background(180,0);
   //noFill();
   fill(0);
   noStroke();
