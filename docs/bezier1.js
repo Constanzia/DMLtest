@@ -8,10 +8,10 @@ function setup() {
 
   //console.log(v1.x, v1.y, v2.x, v2.y);
   k = createSlider(1, 15, 2, 0.1);
- k.addClass(mySliders);
+ // k.addClass(mySliders);
   b = createButton("SAVE");
   b.mousePressed(savegraph);
- b.addClass(myButtons);
+ // b.addClass(myButton);
 }
 
 function draw() {
