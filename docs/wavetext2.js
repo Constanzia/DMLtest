@@ -12,7 +12,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth*4/5, windowHeight);
   inp = createInput("WAVETEXT");
-  inp.position(width / 2 + 180, (7 * height) / 8+200);
+  inp.position(width / 2 + 180, (7 * height) / 8+10);
   inp.size(120, 10);
   cur = createSlider(50, 1100, 600, 0.3);
   cur.position(width / 2 - 100, (7 * height) / 8);
