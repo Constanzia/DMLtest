@@ -12,7 +12,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth*4/5, windowHeight);
   inp = createInput("WAVETEXT");
-  inp.position(width / 2 + 100, (7 * height) / 8-25);
+  inp.position(width / 2 + 180, (7 * height) / 8+200);
   inp.size(120, 10);
   cur = createSlider(50, 1100, 600, 0.3);
   cur.position(width / 2 - 100, (7 * height) / 8);
@@ -35,7 +35,7 @@ function draw() {
   var pt0 = myFont.textToPoints(
     word.charAt(0),
     width / 11,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
@@ -43,56 +43,56 @@ function draw() {
   var pt1 = myFont.textToPoints(
     word.charAt(1),
     width / 11 + k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
   var pt2 = myFont.textToPoints(
     word.charAt(2),
     width / 11 + 2 * k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
   var pt3 = myFont.textToPoints(
     word.charAt(3),
     width / 11 + 3 * k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
   var pt4 = myFont.textToPoints(
     word.charAt(4),
     width / 11 + 4 * k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
   var pt5 = myFont.textToPoints(
     word.charAt(5),
     width / 11 + 5 * k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
   var pt6 = myFont.textToPoints(
     word.charAt(6),
     width / 11 + 6 * k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
   var pt7 = myFont.textToPoints(
     word.charAt(7),
     width / 11 + 7 * k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
    var pt8 = myFont.textToPoints(
     word.charAt(8),
     width / 11 + 8 * k,
-    height / 2,
+    height / 3,
     height / 8,
     { sampleFactor: sf, simplifyThreshold: 0 }
   );
