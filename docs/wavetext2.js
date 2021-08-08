@@ -10,10 +10,10 @@ function preload() {
   myFont = loadFont("BaseMonoWideBoldItalic_6011.ttf");
 }
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth*4/5, windowHeight);
   inp = createInput("WAVETEXT");
-  inp.position(width / 2 + 100, (7 * height) / 8);
-  inp.size(70, 20);
+  inp.position(width / 2 + 100, (7 * height) / 8-25);
+  inp.size(120, 10);
   cur = createSlider(50, 1100, 600, 0.3);
   cur.position(width / 2 - 100, (7 * height) / 8);
   cur.addClass("mySliders");
@@ -21,7 +21,7 @@ function setup() {
 }
 
 function draw() {
-  background("transparent");
+  background(bgcolor);
   k = height / 11;
   var word = inp.value();
   textAlign(CENTER);
