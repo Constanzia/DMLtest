@@ -24,13 +24,13 @@ function setup() {
    avsb=createInput('1');
    avsb.position(480, 115);
   slidern1=createSlider(0,20,1,0.1)
-   slidern1.position(750, 105);
+   slidern1.position(850, 105);
    slidern1.addClass('mySliders-small');
   slidern2=createSlider(0,20,1,0.1)
-    slidern2.position(900, 105);
+    slidern2.position(1000, 105);
    slidern2.addClass('mySliders-small');
   slidern3=createSlider(-20,20,1,0.1)
-     slidern3.position(750, 165);
+     slidern3.position(850, 165);
    slidern3.addClass('mySliders');
    //sliderm=createSlider(0,100,1,0.01)
    sliderm1=createSlider(0,35,1,0.2)
@@ -38,7 +38,7 @@ function setup() {
    sliderm2=createSlider(0,35,1,0.2)
    sliderm2.addClass('mySliders');
     sliderscl=createSlider(0,120,30,0.1)
-     sliderscl.position(750, 225);
+     sliderscl.position(850, 225);
    sliderscl.addClass('mySliders');
   sameButton=createButton('symmetric')
   sameButton.mousePressed(samez)
