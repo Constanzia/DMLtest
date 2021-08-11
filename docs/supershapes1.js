@@ -42,7 +42,7 @@ function setup() {
    sliderscl.addClass('mySliders');
   sameButton=createButton('symmetric')
   sameButton.mousePressed(samez)
-  sameButton.position(500, 500);
+  sameButton.position(350, 350);
   sameButton.addClass('myButtons');
     saveButton=createButton('SAVE')
   saveButton.mousePressed(savetheSVG)
