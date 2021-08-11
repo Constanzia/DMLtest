@@ -38,11 +38,11 @@ function setup() {
    sliderm2=createSlider(0,35,1,0.2)
    sliderm2.addClass('mySliders');
     sliderscl=createSlider(0,120,30,0.1)
-     sliderscl.position(600, 90);
+     sliderscl.position(600, 190);
    sliderscl.addClass('mySliders');
   sameButton=createButton('symmetric')
   sameButton.mousePressed(samez)
-  sameButton.position(10, 200);
+  sameButton.position(150, 200);
   sameButton.addClass('myButtons');
     saveButton=createButton('SAVE')
   saveButton.mousePressed(savetheSVG)
