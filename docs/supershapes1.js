@@ -22,7 +22,7 @@ function setup() {
  // slider1=createSlider(0,100,1/2,0.01)
    //slidern=createSlider(0,20,1,0.1)
    avsb=createInput('1');
-   avsb.position(480, 115);
+   avsb.position(550, 115);
   slidern1=createSlider(0,20,1,0.1)
    slidern1.position(850, 105);
    slidern1.addClass('mySliders-small');
