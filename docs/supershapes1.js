@@ -22,7 +22,7 @@ function setup() {
  // slider1=createSlider(0,100,1/2,0.01)
    //slidern=createSlider(0,20,1,0.1)
    avsb=createInput('1');
-   avsb.position(600, 115);
+   avsb.position(300, 115);
   slidern1=createSlider(0,20,1,0.1)
    slidern1.position(600, 120);
    slidern1.addClass('mySliders');
@@ -42,7 +42,7 @@ function setup() {
    sliderscl.addClass('mySliders');
   sameButton=createButton('symmetric')
   sameButton.mousePressed(samez)
-  sameButton.position(350, 350);
+  sameButton.position(290, 250);
   sameButton.addClass('myButtons');
     saveButton=createButton('SAVE')
   saveButton.mousePressed(savetheSVG)
