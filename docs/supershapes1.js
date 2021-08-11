@@ -22,25 +22,27 @@ function setup() {
  // slider1=createSlider(0,100,1/2,0.01)
    //slidern=createSlider(0,20,1,0.1)
    avsb=createInput('1');
-   avsb.position(170, 5);
+   avsb.position(600, 15);
   slidern1=createSlider(0,20,1,0.1)
-   slidern1.position(170, 30);
+   slidern1.position(600, 40);
    slidern1.addClass('mySliders');
   slidern2=createSlider(0,20,1,0.1)
-    slidern2.position(320, 30);
+    slidern2.position(750, 40);
    slidern2.addClass('mySliders');
   slidern3=createSlider(-20,20,1,0.1)
-     slidern3.position(170, 55);
+     slidern3.position(600, 65);
    slidern3.addClass('mySliders');
    //sliderm=createSlider(0,100,1,0.01)
    sliderm1=createSlider(0,35,1,0.2)
+   sliderm1.addClass('mySliders');
    sliderm2=createSlider(0,35,1,0.2)
+   sliderm2.addClass('mySliders');
     sliderscl=createSlider(0,120,30,0.1)
-     sliderscl.position(170, 80);
+     sliderscl.position(600, 90);
    sliderscl.addClass('mySliders');
   sameButton=createButton('symmetric')
   sameButton.mousePressed(samez)
-  sameButton.position(170, 105);
+  sameButton.position(170, 400);
   sameButton.addClass('myButtons');
     saveButton=createButton('SAVE')
   saveButton.mousePressed(savetheSVG)
