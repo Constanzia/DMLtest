@@ -56,6 +56,9 @@ function draw() {
     if(h==4){number4(-3 * sc, 0.7 * vs + sc * 6);}
     if(h==5){number5(-3 * sc, 0.7 * vs + sc * 6);}
     if(h==6){number6(-3 * sc, 0.7 * vs + sc * 6);}
+   if(h==7){number7(-3 * sc, 0.7 * vs + sc * 6);}
+   if(h==8){number8(-3 * sc, 0.7 * vs + sc * 6);}
+   if(h==9){number9(-3 * sc, 0.7 * vs + sc * 6);}
   dotdot(0, 0.7 * vs + sc * 6);
   dotdot(0, 0.7 * vs + sc * 6);
   //minute1
