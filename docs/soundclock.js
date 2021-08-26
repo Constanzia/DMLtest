@@ -18,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-  background(250);
+  background(180);
   translate(width / 2, height / 2);
   //startx=5.5*sc
   vol = mic.getLevel();
@@ -549,7 +549,7 @@ function number3(x, y) {
 
 //4
 function number4(x, y) {
-  x = x - sc;
+  //x = x - sc;
   for (i = x + sc; i > x - sc; i -= 2 * k) {
     beginShape();
     vertex(i, y - m);
