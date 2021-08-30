@@ -18,8 +18,8 @@ cs.style('background-color', 'white');
     cs.style('width','35px')
       cs.style('height','35px')
 cs.style('mix-blend-mode', 'exclusion');
-cs.position(mouseX, mouseY+windowHeight);
+cs.position(mouseX, mouseY+0.8*windowHeight);
 }
 function windowResized() {
-  resizeCanvas(windowWidth, 9*windowHeight/10);
+  resizeCanvas(windowWidth, windowHeight);
 }
