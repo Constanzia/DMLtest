@@ -21,5 +21,5 @@ cs.style('mix-blend-mode', 'exclusion');
 cs.position(mouseX, mouseY+windowHeight);
 }
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, 9*windowHeight/10);
 }
