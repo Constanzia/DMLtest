@@ -5,7 +5,7 @@ cs= createElement('h6', '.');
 }
 
 function draw() {
-  background(255);
+  background(0);
  clear();
 //blendMode(LIGHTEST);
   fill(200)
