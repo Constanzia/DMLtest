@@ -12,22 +12,9 @@
 .thecolumn{
  background:transparent;
  float:left;
-margin-right:1.5%;}
-.cursor {
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  top: -50%;
-  left: -50%;
-  margin: -15px 0 0 -15px;
-  border-radius: 50%;
-  background-color: white;
-  backface-visibility: hidden;
-  transition: transform 0.2s ease-out;
-  mix-blend-mode: difference;
-  z-index: 1000;
-  pointer-events: none;
-}
+margin-right:1.5%;
+  backface-visibility: hidden;}
+
 @keyframes changecolor{
 
  0%{background-color: #85D400;}
@@ -40,27 +27,7 @@ margin-right:1.5%;}
 
 
 }
-#xer{position:absolute;
-  left:0px;
- top:0px;
- background:transparent;
-  z-index:999;
- width: 0px;
-  border-right: solid 1px white;
-  height: 100vw;
-   transition: width 0.1s;
-  }
-#yer{position:absolute;
- left:0px;
- top:0px;
- background:transparent;
-  z-index:999;
- width: 100vw;
-  border-bottom: solid 1px white;
-  height: 0px;
-    transition: height 0.1s;
-  }
-  
+
   a,
   a:link,
   a:visited {
@@ -83,5 +50,6 @@ margin-right:1.5%;}
       background-color: transparent;
   }
 
-lk{font-size: 8vh;}
+lk{font-size: 8vh;
+ background-color: transparent;}
   
