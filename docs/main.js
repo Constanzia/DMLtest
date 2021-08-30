@@ -1,10 +1,22 @@
-var $cursor = $('.cursor');
-
-function moveCursor(e) {
-
-  $cursor.css({"top": e.pageY, "left": e.pageX});
-
-
+let cs 
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+cs= createElement('h6', '.');
 }
 
-$(window).on('mousemove', moveCursor);
+function draw() {
+  background(255);
+ clear();
+//blendMode(LIGHTEST);
+  fill(200)
+  noStroke()
+ //circle(mouseX,mouseY,30);
+
+cs.style('background-color', 'white');
+  cs.style('color', 'white');
+  cs.style('border-radius','800px')
+    cs.style('width','35px')
+      cs.style('height','35px')
+cs.style('mix-blend-mode', 'exclusion');
+cs.position(mouseX, mouseY+90);
+}
