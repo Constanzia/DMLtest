@@ -56,12 +56,12 @@ lk{font-size: 8vh;
 #cursor{
 display:block;
 position:absolute;
- margin-top:-12px;
-   margin-left:-12px;
+margin-top:-12px;
+margin-left:-12px;
 width:24px;
 height:24px;
 border-radius:30px;
-background-color:black;
+background-color:white;
 mix-blendmode:exclusion;
 z-index:9999;}
   
