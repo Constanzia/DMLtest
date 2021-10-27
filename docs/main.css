@@ -13,7 +13,8 @@ body{ background-color: #85D400;
  background:transparent;
  float:left;
 margin-right:1.5%;
-  backface-visibility: hidden;}
+/*   backface-visibility: hidden; */
+}
 
 @keyframes changecolor{
 
