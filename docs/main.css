@@ -1,6 +1,4 @@
   * {
-      background-color: #85D400;
-      animation:changecolor 20s infinite;
       font-family:bilo, sans-serif;
       font-style: normal;
       font-weight: 400;
@@ -9,6 +7,8 @@
    cursor:none;
       color: #000000;
   }
+body{ background-color: #85D400;
+      animation:changecolor 20s infinite;}
 .thecolumn{
  background:transparent;
  float:left;
@@ -66,5 +66,6 @@ border-radius:60px;
   isolation: isolate; 
 background-color:red;
 mix-blendmode:screen;
-z-index:9999;}
+z-index:9999;
+amimation:none;}
   
