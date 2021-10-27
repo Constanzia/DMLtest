@@ -58,12 +58,12 @@ display:block;
  top:0px;
  left:0px;
 position:absolute;
-margin-top:-18px;
-margin-left:-18px;
+/* margin-top:-18px;
+margin-left:-18px; */
 width:36px;
 height:36px;
 border-radius:60px;
-background-color:black;
-mix-blendmode:exclusion;
+background-color:red;
+mix-blendmode:screen;
 z-index:9999;}
   
