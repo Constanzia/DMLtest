@@ -58,12 +58,12 @@ display:block;
  top:0px;
  left:0px;
 position:absolute;
-/* margin-top:-12px;
-margin-left:-12px; */
-width:24px;
-height:24px;
-border-radius:30px;
-background-color:white;
+margin-top:-18px;
+margin-left:-18px;
+width:36px;
+height:36px;
+border-radius:60px;
+background-color:black;
 mix-blendmode:exclusion;
 z-index:9999;}
   
