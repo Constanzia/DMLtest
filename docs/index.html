@@ -44,7 +44,6 @@
           <a href="bezier.html">
         <lk>Shape Study 3</lk>
     </a>
-           <div id=cursor></div>
     </div>
     <div class=thecolumn>
          <a href="text2.html">
@@ -75,13 +74,14 @@
          <a href="clock1.html">
         <lk>Interactive Clock</lk>
     </a>   
-           <div id=cursor></div>
          </div>
         <div id=cursor></div>
 </body>
-    <script>const cursor = document.getElementById("cursor");
+    <script>
+        const cursor = document.getElementById("cursor");
     document.addEventListener('mousemove', e => {
             cursor.setAttribute("style", "transform: translate(" + (e.clientX ) + "px, " + (e.clientY ) + "px);")
-        })</script>
+        })
+    </script>
  
 </html>
