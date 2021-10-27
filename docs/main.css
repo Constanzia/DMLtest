@@ -63,6 +63,7 @@ margin-left:-18px; */
 width:36px;
 height:36px;
 border-radius:60px;
+  isolation: isolate; 
 background-color:red;
 mix-blendmode:screen;
 z-index:9999;}
