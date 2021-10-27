@@ -18,7 +18,7 @@
 <body>
 <!--      <script src="main.js"></script> -->
     <h1>Summer Lab by Constance Chen</h1>
-     <div id=cursor></div>
+    
    
      <div class=thecolumn>
     <a href="nlabvol1.html">
@@ -76,11 +76,11 @@
     </a>   
          
          </div>
-       
+        <div id=cursor></div>
 </body>
     <script>const cursor = document.getElementById("cursor");
     document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "transform: translate(" + (e.pageX ) + "px, " + (e.pageY ) + "px);")
+            cursor.setAttribute("style", "transform: translate(" + (e.clientX ) + "px, " + (e.clientY ) + "px);")
         })</script>
  
 </html>
