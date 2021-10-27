@@ -55,9 +55,11 @@ lk{font-size: 8vh;
 
 #cursor{
 display:block;
+ top:0px;
+ left:0px;
 position:absolute;
-margin-top:-12px;
-margin-left:-12px;
+/* margin-top:-12px;
+margin-left:-12px; */
 width:24px;
 height:24px;
 border-radius:30px;
